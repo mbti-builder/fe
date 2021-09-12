@@ -1,0 +1,22 @@
+{
+  "name": "mbti-builder-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbti-builder/fe.git"
+  },
+  "keywords": [
+    "mbti"
+  ],
+  "author": "seung-00",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbti-builder/fe/issues"
+  },
+  "homepage": "https://github.com/mbti-builder/fe#readme"
+}
