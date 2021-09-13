@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack serve --config ./config/webpack/webpack.dev.js",
     "build": "tsc && webpack --config ./config/webpack/webpack.prod.js",
-    "test": "jest --watchAll --coverage",
     "check-types": "tsc"
   },
   "repository": {
