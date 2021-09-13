@@ -5,7 +5,7 @@ const DIST_PATH = path.resolve(PROJECT_ROOT, 'dist');
 const SRC_PATH = path.resolve(PROJECT_ROOT, 'src');
 
 module.exports = {
-    entry: path.resolve(SRC_PATH, 'index.js'),
+    entry: path.resolve(SRC_PATH, 'index.ts'),
     output: {
         path: DIST_PATH,
         filename: '[name].js',
@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.ts$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -23,7 +23,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.css', '.scss'],
+        extensions: ['.js', '.css', '.scss', '.ts'],
         alias: {
             '@src': SRC_PATH,
         },
