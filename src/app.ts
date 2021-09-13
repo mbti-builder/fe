@@ -1,8 +1,8 @@
-import { Hi } from "@src/components/Hi.js"
-import { Bye } from "@src/components/Bye.js"
+import { Hi } from "@src/components/Hi"
+import { Bye } from "@src/components/Bye"
 
 export const app = () => {
-    const $root = document.querySelector('.root');
+    const $root = document.querySelector('.root') as HTMLDivElement;
     const $frag = new DocumentFragment();
 
     const $main = document.createElement('main');
