@@ -23,7 +23,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.css'],
+        extensions: ['.js', '.css', '.scss'],
         alias: {
             '@src': SRC_PATH,
         },
