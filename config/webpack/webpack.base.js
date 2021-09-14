@@ -14,7 +14,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts$/,
+                test: /\.(ts|js)x?$/,
+                include: path.resolve("src"),
+
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -23,7 +25,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.css', '.scss', '.ts'],
+        extensions: ['.js', '.css', '.scss', '.ts', '.jsx', '.tsx'],
         alias: {
             '@src': SRC_PATH,
         },

@@ -22,17 +22,7 @@ module.exports = merge(baseConfig, {
         test: /\.s?css$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      {
-        test: /\.(ts|js)x?$/,
-        include: path.resolve("src"),
-        use: {
-          loader: "babel-loader",
-        },
-      },
     ],
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
   plugins: [
     new HtmlWebPackPlugin({
