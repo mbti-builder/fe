@@ -15,6 +15,6 @@ jobs:
     - name: 의존성 설치
       run: npm ci
     - name: 유닛테스트
-      run: npm run test
+      run: npm run test:ci
     - name: 빌드
       run: npm run build
