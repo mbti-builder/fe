@@ -1,3 +1,6 @@
+import React from "react";
+import { addDecorator } from "@storybook/react";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +9,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+
+addDecorator((Story) => <Story />);
