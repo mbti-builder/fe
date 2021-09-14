@@ -13,8 +13,7 @@ module.exports = merge(baseConfig, {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                test: /\.s?css$/,
             },
         ],
     },
