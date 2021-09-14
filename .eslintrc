@@ -36,7 +36,6 @@
       }
     ],
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-    "camelcase": "off",
     "no-param-reassign": "off",
     "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
