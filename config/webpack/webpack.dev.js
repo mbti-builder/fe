@@ -31,6 +31,9 @@ module.exports = merge(baseConfig, {
       },
     ],
   },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(TEMPLATE_PATH, "index.html"),
