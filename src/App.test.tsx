@@ -3,12 +3,9 @@ import { render } from '@testing-library/react';
 
 import App from './App';
 
-
 describe('App', () => {
   function renderApp() {
-    return render(
-        <App />
-    );
+    return render(<App />);
   }
 
   context('컴포넌트가', () => {

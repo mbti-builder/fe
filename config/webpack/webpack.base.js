@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 
 const PROJECT_ROOT = path.resolve(__dirname, '../..');
@@ -5,30 +6,30 @@ const DIST_PATH = path.resolve(PROJECT_ROOT, 'dist');
 const SRC_PATH = path.resolve(PROJECT_ROOT, 'src');
 
 module.exports = {
-    entry: path.resolve(SRC_PATH, 'index.ts'),
-    output: {
-        path: DIST_PATH,
-        filename: '[name].js',
-        clean: true,
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(ts|js)x?$/,
-                include: path.resolve("src"),
+  entry: path.resolve(SRC_PATH, 'index.ts'),
+  output: {
+    path: DIST_PATH,
+    filename: '[name].js',
+    clean: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(ts|js)x?$/,
+        include: path.resolve('src'),
 
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                },
-            },
-        ],
-    },
-    resolve: {
-        extensions: ['.js', '.css', '.scss', '.ts', '.jsx', '.tsx'],
-        alias: {
-            '@src': SRC_PATH,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
         },
-        modules: ['node_modules'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.css', '.scss', '.ts', '.jsx', '.tsx'],
+    alias: {
+      '@src': SRC_PATH,
     },
+    modules: ['node_modules'],
+  },
 };
