@@ -18,7 +18,10 @@
           "jsx": true
       },
       "ecmaVersion": 12,
-      "sourceType": "module"
+      "sourceType": "module",
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./"
+  
   },
   "plugins": [
       "react",
@@ -47,7 +50,8 @@
     "import/resolver": {
       "node": {
         "extensions" : [".js", ".jsx", ".ts", ".tsx"]
-      }
+      },
+      "typescript": "./tsconfig.json"
     }
   }
 }
