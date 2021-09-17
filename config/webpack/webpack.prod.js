@@ -12,14 +12,6 @@ const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  entry: './src/index.tsx',
-  module: {
-    rules: [
-      {
-        test: /\.s?css$/,
-      },
-    ],
-  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(TEMPLATE_PATH, 'index.html'),

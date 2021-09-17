@@ -12,20 +12,11 @@ const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
 module.exports = merge(baseConfig, {
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: './src/index.tsx',
   devServer: {
     hot: true,
     inline: true,
     port: '5050',
     host: '127.0.0.1',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.s?css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ],
   },
   plugins: [
     new HtmlWebPackPlugin({

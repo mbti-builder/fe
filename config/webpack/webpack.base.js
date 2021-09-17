@@ -6,7 +6,7 @@ const DIST_PATH = path.resolve(PROJECT_ROOT, 'dist');
 const SRC_PATH = path.resolve(PROJECT_ROOT, 'src');
 
 module.exports = {
-  entry: path.resolve(SRC_PATH, 'index.ts'),
+  entry: path.resolve(SRC_PATH, 'index.tsx'),
   output: {
     path: DIST_PATH,
     filename: '[name].js',
@@ -22,6 +22,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
