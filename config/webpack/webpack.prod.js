@@ -11,11 +11,11 @@ const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  entry: './src/index.tsx',
   module: {
     rules: [
       {
         test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
