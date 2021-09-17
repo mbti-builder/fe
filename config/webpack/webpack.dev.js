@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { merge } = require('webpack-merge');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const baseConfig = require('./webpack.base');
+const baseConfig = require('./webpack.base.js');
 
 const PROJECT_ROOT = path.resolve(__dirname, '../..');
 const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
@@ -17,6 +15,14 @@ module.exports = merge(baseConfig, {
     inline: true,
     port: '5050',
     host: '127.0.0.1',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({

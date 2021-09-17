@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { merge } = require('webpack-merge');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -12,6 +11,14 @@ const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(TEMPLATE_PATH, 'index.html'),
