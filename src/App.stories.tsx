@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import App from './App';
+import App from '@src/App';
 
 export default {
   title: 'App',
