@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { useSelector, useDispatch } from 'react-redux';
 
-import uiReducer, { setLoading } from './uiSlice';
+import uiReducer, { setLoading } from '@src/store/uiSlice';
 
 const reducers = combineReducers({
   ui: uiReducer,

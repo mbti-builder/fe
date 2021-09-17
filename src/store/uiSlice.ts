@@ -12,7 +12,7 @@ const uiReducer = createSlice({
   name: 'ui',
   initialState,
   reducers: {
-    setLoading(state, { payload: { isLoading } }: PayloadAction<UIState>) {
+    setLoading: (state, { payload: { isLoading } }: PayloadAction<UIState>) => {
       state.isLoading = isLoading;
     },
   },
