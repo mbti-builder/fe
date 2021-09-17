@@ -5,13 +5,15 @@ import App from './App';
 
 describe('기본 test', () => {
   it('컴포넌트는 정상적으로 렌더링되어야 한다.', () => {
-    const { container } = render(<App />)
+    const { container } = render(<App />);
     expect(container).toBeInTheDocument();
-  })
+  });
 });
 
 describe('Redux 예시 test', () => {
-  beforeEach(() => { render(<App />); })
+  beforeEach(() => {
+    render(<App />);
+  });
 
   it('렌더링 되었을 때 default text는 break 이어야 한다.', () => {
     expect(screen.getByText('break')).toBeInTheDocument();
