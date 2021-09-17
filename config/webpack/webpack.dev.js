@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { merge } = require('webpack-merge');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const baseConfig = require('./webpack.base');
 
 const PROJECT_ROOT = path.resolve(__dirname, '../..');
