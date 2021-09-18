@@ -15,7 +15,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   labelText?: string;
 }
 
-export default function Button({
+const Button = ({
   className,
   children,
   size = 'md',
@@ -26,7 +26,7 @@ export default function Button({
   buttonColor = 'black',
   labelText,
   ...restProps
-}: ButtonProps): ReactElement {
+}: ButtonProps): ReactElement => {
   return (
     <button
       type="button"
@@ -43,4 +43,6 @@ export default function Button({
       <span>{labelText ? <>{labelText} </> : children}</span>
     </button>
   );
-}
+};
+
+export default Button;
