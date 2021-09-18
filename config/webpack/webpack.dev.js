@@ -10,7 +10,6 @@ const TEMPLATE_PATH = path.resolve(PROJECT_ROOT, 'public');
 module.exports = merge(baseConfig, {
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: './src/index.tsx',
   devServer: {
     hot: true,
     inline: true,
