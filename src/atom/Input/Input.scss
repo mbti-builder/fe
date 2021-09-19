@@ -1,0 +1,130 @@
+._INPUTWRAPPER_ {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  &.error {
+    ._wrapper {
+      border-color: $red_8;
+    }
+  }
+  &.errorMessage {
+    margin-bottom: 24px;
+  }
+}
+
+._wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid $blue_gray;
+  background-color: #fff;
+  cursor: text;
+
+  transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  ._password-toggle-btn {
+    @include flex_col();
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &:focus-within {
+    border-color: $gray_7;
+  }
+
+  &:hover,
+  &:active {
+    border-color: $gray_7;
+  }
+
+  &.xs {
+    height: 28px;
+    padding: 0 8px;
+    font-size: $font-size-small;
+    ._ICON_WRAPPER_ {
+      font-size: 16px !important;
+    }
+  }
+  &.sm {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: $font-size-small;
+    ._ICON_WRAPPER_ {
+      font-size: 20px !important;
+    }
+  }
+  &.md {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: $font-size-small;
+  }
+  &.lg {
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 10px;
+    border-width: 2px;
+    font-size: $font-size-medium;
+    ._ICON_WRAPPER_ {
+      font-size: 28px !important;
+    }
+  }
+  &.xl {
+    height: 56px;
+    padding: 0 20px;
+    border-radius: 14px;
+    border-width: 2px;
+    font-size: $font-size-large;
+    ._ICON_WRAPPER_ {
+      font-size: 32px !important;
+    }
+  }
+
+  &.disabled {
+    border-color: $gray_1;
+    background-color: $gray_1;
+    cursor: not-allowed;
+    user-select: none;
+    ._INPUT_ {
+      cursor: not-allowed;
+    }
+    ._INPUT_::placeholder {
+      color: $gray_5;
+    }
+  }
+}
+
+._INPUT_ {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 0px solid;
+  &::placeholder {
+    color: $gray_6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+._error-message {  
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  display: flex;
+  user-select: none;
+  white-space: nowrap;
+  color: $red_8;
+
+  ._ICON_WRAPPER_ {
+    color: $red_8 !important;
+    margin-right: 4px;
+  }
+}
