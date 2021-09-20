@@ -1,5 +1,6 @@
 import React from 'react';
 import { setLoading, useAppDispatch, useUiState } from '@src/store';
+import Button from '@src/atom/Button';
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -7,12 +8,10 @@ const App = () => {
 
   return (
     <div>
-      <button
-        type="button"
+      <Button
+        labelText="toggle"
         onClick={() => dispatch(setLoading({ isLoading: !isLoading }))}
-      >
-        toggle
-      </button>
+      />
       <div>{isLoading ? 'loading' : 'break'}</div>
     </div>
   );
