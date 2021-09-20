@@ -72,7 +72,7 @@ const Input = React.forwardRef<InputRef, InputProps>(
         data-testid="input"
       >
         <div
-          className={cn('_wrapper', inputSize, {
+          className={cn('wrapper', inputSize, {
             disabled,
           })}
           onClick={() => {
@@ -87,13 +87,12 @@ const Input = React.forwardRef<InputRef, InputProps>(
             className={cn('_INPUT_', { tailing: password })}
             type={password && !revealPw ? 'password' : props.type}
             disabled={disabled}
-            // eslint-disable-next-line react/jsx-props-no-spreading
             {...props}
           />
           {password && (
             <button
               type="button"
-              className="_password-toggle-btn"
+              className="password-toggle-button"
               disabled={disabled}
               onClick={() => {
                 setRevealPw(!revealPw);
@@ -107,7 +106,7 @@ const Input = React.forwardRef<InputRef, InputProps>(
           )}
         </div>
         {errorMessage && (
-          <div className="_error-message">
+          <div className="error-message">
             <Icon iconName="error_outline" size={15} />
             {errorMessage}
           </div>
