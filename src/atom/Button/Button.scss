@@ -12,7 +12,7 @@
   cursor: pointer;
   white-space: nowrap;
   user-select: none;
-  transition: $button_hover_transition;
+  transition: $button-hover-transition;
   box-sizing: border-box;
   flex-shrink: 0;
   @include button-color();
@@ -115,80 +115,80 @@
 
   &.black {
     &.ghost.loading {
-      background-color: $gray_8;
+      background-color: $gray-8;
     }
   }
   &.blue {
-    @include button-color($blue_5);
+    @include button-color($blue-5);
     &.ghost.lg,
     &.ghost.xl {
       border-width: 0.2rem;
     }
     &.ghost.loading,
     &.quiet.loading {
-      background-color: $blue_5;
+      background-color: $blue-5;
     }
   }
   &.red {
-    @include button-color($red_7);
+    @include button-color($red-7);
     &.ghost.lg,
     &.ghost.xl {
       border-width: 0.2rem;
     }
     &.ghost.loading,
     &.quiet.loading {
-      background-color: $red_7;
+      background-color: $red-7;
     }
   }
   &.gray {
-    @include button-color($gray_1, $gray_8);
+    @include button-color($gray-1, $gray-8);
     &.solid {
-      background-color: $gray_1;
+      background-color: $gray-1;
       &:hover {
-        background-color: $gray_3;
+        background-color: $gray-3;
       }
       &:active {
-        background-color: $gray_4;
+        background-color: $gray-4;
       }
     }
   }
 
   &.disabled {
-    background-color: $gray_2;
-    color: $gray_5;
+    background-color: $gray-2;
+    color: $gray-5;
     cursor: not-allowed;
     &:hover {
-      background-color: $gray_2;
-      color: $gray_5;
+      background-color: $gray-2;
+      color: $gray-5;
     }
     &.ghost {
       background-color: transparent;
-      border-color: $gray_2;
-      color: $gray_5;
+      border-color: $gray-2;
+      color: $gray-5;
       &:hover,
       &:active {
         background-color: transparent;
-        border-color: $gray_2;
-        color: $gray_5;
+        border-color: $gray-2;
+        color: $gray-5;
       }
     }
     &.quiet {
       background-color: transparent;
-      color: $gray_5;
+      color: $gray-5;
       &:hover {
         background-color: transparent;
         text-decoration: none;
-        color: $gray_5;
+        color: $gray-5;
       }
     }
     &.solid {
-      background-color: $gray_1;
+      background-color: $gray-1;
       &:hover {
-        background-color: $gray_1;
+        background-color: $gray-1;
       }
     }
     &.minimal {
-      color: $gray_5;
+      color: $gray-5;
       &.blue,
       &.red,
       &.black,
