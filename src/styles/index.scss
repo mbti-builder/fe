@@ -1,2 +1,7 @@
-@import "mixin";
-@import 'main.scss';
+@import 'color';
+@import 'mixin';
+@import 'variable';
+
+body {
+  font-size: 62.5% !important;
+}
