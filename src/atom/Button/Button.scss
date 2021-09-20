@@ -27,85 +27,85 @@
   }
 
   & + & {
-    margin-left: 8px;
+    margin-left: 0.8rem;
   }
 
   &.xxs {
-    height: 24px;
-    padding: 0 6px;
-    border-radius: 6px;
+    height: 2.4rem;
+    padding: 0 0.6rem;
+    border-radius: 0.6rem;
     font-size: $font-size-xx-small;
     &.rounded {
-      border-radius: calc(24px / 2);
-      padding: 0 8px;
+      border-radius: calc(2.4rem / 2);
+      padding: 0 0.8rem;
     }
   }
 
   &.xs {
-    height: 28px;
-    padding: 0 8px;
-    border-radius: 6px;
+    height: 2.8rem;
+    padding: 0 0.8rem;
+    border-radius: 0.6rem;
     font-size: $font-size-small;
     &.rounded {
-      border-radius: calc(28px / 2);
-      padding: 0 10px;
+      border-radius: calc(2.8rem / 2);
+      padding: 0 1rem;
     }
   }
 
   &.sm {
-    height: 32px;
-    padding: 0 12px;
-    border-radius: 8px;
+    height: 3.2rem;
+    padding: 0 1.2rem;
+    border-radius: 0.8rem;
     font-size: $font-size-small;
     &.rounded {
-      border-radius: calc(32px / 2);
-      padding: 0 14px;
+      border-radius: calc(3.2rem / 2);
+      padding: 0 1.4rem;
     }
   }
 
   &.md {
-    height: 36px;
-    padding: 0 12px;
-    border-radius: 8px;
+    height: 3.6rem;
+    padding: 0 1.2rem;
+    border-radius: 0.8rem;
     font-size: $font-size-small;
     &.rounded {
-      border-radius: calc(36px / 2);
-      padding: 0 14px;
+      border-radius: calc(3.6rem / 2);
+      padding: 0 1.4rem;
     }
   }
 
   &.lg {
-    height: 44px;
-    padding: 0 16px;
-    border-radius: 10px;
+    height: 4.4rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
     font-size: $font-size-medium;
     &.ghost,
     &.ghost.gray {
-      border-width: 2px;
+      border-width: 0.2rem;
     }
     &.rounded {
-      border-radius: calc(44px / 2);
-      padding: 0 18px;
+      border-radius: calc(4.4rem / 2);
+      padding: 0 1.8rem;
     }
   }
 
   &.xl {
-    height: 56px;
-    padding: 0 32px;
-    border-radius: 14px;
+    height: 5.6rem;
+    padding: 0 3.2rem;
+    border-radius: 1.4rem;
     font-size: $font-size-large;
     &.ghost,
     &.ghost.gray {
-      border-width: 2px;
+      border-width: 0.2rem;
     }
     &.rounded {
-      border-radius: calc(56px / 2);
-      padding: 0 36px;
+      border-radius: calc(5.6rem / 2);
+      padding: 0 3.6rem;
     }
   }
 
   &.minimal {
-    padding: 4px;
+    padding: 0.4rem;
     height: max-content;
   }
 
@@ -122,7 +122,7 @@
     @include button-color($blue_5);
     &.ghost.lg,
     &.ghost.xl {
-      border-width: 2px;
+      border-width: 0.2rem;
     }
     &.ghost.loading,
     &.quiet.loading {
@@ -133,7 +133,7 @@
     @include button-color($red_7);
     &.ghost.lg,
     &.ghost.xl {
-      border-width: 2px;
+      border-width: 0.2rem;
     }
     &.ghost.loading,
     &.quiet.loading {
@@ -206,7 +206,7 @@
     width: 100%;
     margin: 0;
     & ~ & {
-      margin-top: 8px;
+      margin-top: 0.8rem;
     }
   }
 
