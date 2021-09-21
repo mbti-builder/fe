@@ -2,6 +2,8 @@ import React from 'react';
 import { render, getByTestId } from '@src/test-utils';
 import Skeleton, { SkeletonProps } from '@src/atom/Skeleton';
 
+const testQuote = `"I find the harder I work, the more luck I have" - Thomas Jefferson`;
+
 function renderInput(props: SkeletonProps) {
   return render(<Skeleton {...props} />);
 }
@@ -26,9 +28,23 @@ describe('<Skeleton />', () => {
       const { container } = renderInput({ size: 'md' });
       expect(getByTestId(container, 'skeleton')).toHaveClass('md');
     });
-    it('children props를 넘기면 컴포넌트에 반영된다', () => {
-      const { container } = renderInput({ children: 'test' });
-      expect(getByTestId(container, 'skeleton')).toHaveTextContent('test');
+    context('children props를 넘기면', () => {
+      it('withChildren이 true일 때 컴포넌트에 반영된다', () => {
+        const { container } = renderInput({
+          withChildren: true,
+          children: testQuote,
+        });
+        expect(getByTestId(container, 'skeleton')).toHaveTextContent(testQuote);
+      });
+      it('withChildren이 false일 때 컴포넌트에 반영되지 않는다', () => {
+        const { container } = renderInput({
+          withChildren: false,
+          children: 'test',
+        });
+        expect(getByTestId(container, 'skeleton')).toEqual(
+          expect.not.stringContaining(testQuote),
+        );
+      });
     });
   });
 });
