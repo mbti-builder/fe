@@ -17,6 +17,7 @@ button.args = {
   disabled: false,
   fullWidth: false,
   rounded: false,
+  shadow: false,
   buttonColor: 'black',
   labelText: 'TEST',
 };

@@ -193,6 +193,10 @@
     }
   }
 
+  &.shadow {
+    box-shadow: $box-shadow-1;
+  }
+
   .none {
     opacity: 0;
   }

@@ -46,6 +46,11 @@ describe('<Button />', () => {
 
       expect(getByTestId(container, 'button')).toHaveClass('rounded');
     });
+    it('shadow props를 넘기면 컴포넌트에 반영된다', () => {
+      const { container } = renderButton({ shadow: true });
+
+      expect(getByTestId(container, 'button')).toHaveClass('shadow');
+    });
     it('buttonColor props를 넘기면 컴포넌트에 반영된다', () => {
       const { container } = renderButton({ buttonColor: 'gray' });
 

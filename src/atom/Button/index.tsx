@@ -12,6 +12,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonColor?: ButtonColor;
   fullWidth?: boolean;
   rounded?: boolean;
+  shadow?: boolean;
   labelText?: string;
 }
 
@@ -23,6 +24,7 @@ const Button = ({
   disabled,
   fullWidth,
   rounded,
+  shadow,
   buttonColor = 'black',
   labelText,
   ...restProps
@@ -35,6 +37,7 @@ const Button = ({
         rounded,
         disabled,
         'full-width': fullWidth,
+        shadow,
       })}
       disabled={disabled}
       {...restProps}
