@@ -8,11 +8,10 @@ import React, {
 import cn from 'classnames';
 import Icon from '@src/atom/Icon';
 import './Input.scss';
-import { customTypes } from 'custom-types';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   password?: boolean;
-  inputSize?: customTypes.ElementSize;
+  inputSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   error?: boolean;
   errorMessage?: string;
 }
@@ -108,7 +107,7 @@ const Input = React.forwardRef<InputRef, InputProps>(
         </div>
         {errorMessage && (
           <div className="error-message">
-            <Icon iconName="error_outline" size="md" />
+            <Icon iconName="error_outline" size={15} />
             {errorMessage}
           </div>
         )}
