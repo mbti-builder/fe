@@ -37,7 +37,7 @@ const Skeleton = ({
       data-testid="skeleton"
       {...props}
     >
-      {children}
+      {withChildren && children}
     </div>
   );
 };
