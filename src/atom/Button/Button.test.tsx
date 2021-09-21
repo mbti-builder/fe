@@ -4,7 +4,6 @@ import { render, getByTestId } from '@src/test-utils';
 import Button, { ButtonProps } from '@src/atom/Button';
 
 function renderButton(props: ButtonProps) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
   return render(<Button {...props} />);
 }
 

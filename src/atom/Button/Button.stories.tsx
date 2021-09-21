@@ -7,7 +7,6 @@ export default {
   component: Button,
 } as Meta;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: Story = (props) => <Button {...props} />;
 
 export const button = Template.bind({});

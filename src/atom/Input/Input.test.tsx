@@ -4,7 +4,6 @@ import { render, getByTestId } from '@src/test-utils';
 import Input, { InputProps } from '@src/atom/Input';
 
 function renderInput(props: InputProps) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
   return render(<Input {...props} />);
 }
 

@@ -7,7 +7,6 @@ export default {
   component: Input,
 } as Meta;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: Story = (props) => <Input {...props} />;
 
 export const input = Template.bind({});
