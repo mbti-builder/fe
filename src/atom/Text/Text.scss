@@ -1,47 +1,47 @@
 ._TEXT_ {
-  font-weight: $font_weight_regular;
-  font-size: $font_size_medium;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-medium;
   &.font-size {
     &-xxs {
-      font-size: $font_size_xx_small;
+      font-size: $font-size-xx-small;
     }
     &-xs {
-      font-size: $font_size_x_small;
+      font-size: $font-size-x-small;
     }
     &-s {
-      font-size: $font_size_small;
+      font-size: $font-size-small;
     }
     &-md {
-      font-size: $font_size_medium;
+      font-size: $font-size-medium;
     }
     &-l {
-      font-size: $font_size_large;
+      font-size: $font-size-large;
     }
     &-xl {
-      font-size: $font_size_x_large;
+      font-size: $font-size-x-large;
     }
     &-xxl {
-      font-size: $font_size_xx_large;
+      font-size: $font-size-xx-large;
     }
     &-xxxl {
-      font-size: $font_size_xxx_large;
+      font-size: $font-size-xxx-large;
     }
     &-xxxxl {
-      font-size: $font_size_xxxx_large;
+      font-size: $font-size-xxxx-large;
     }
   }
   &.font-weight {
     &-light {
-      font-weight: $font_weight_light;
+      font-weight: $font-weight-light;
     }
     &-regular {
-      font-weight: $font_weight_regular;
+      font-weight: $font-weight-regular;
     }
     &-medium {
-      font-weight: $font_weight_medium;
+      font-weight: $font-weight-medium;
     }
     &-bold {
-      font-weight: $font_weight_bold;
+      font-weight: $font-weight-bold;
     }
   }
   &.text-align {
