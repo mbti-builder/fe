@@ -1,18 +1,17 @@
 import React, { ReactElement } from 'react';
 import cn from 'classnames';
 import './Icon.scss';
-import { customTypes } from 'custom-types';
 
 export interface IconProps {
   iconName?: string;
-  size?: customTypes.ElementSize;
-  color?: customTypes.ElementColor;
+  size?: number;
+  color?: string;
   pointer?: boolean;
 }
 
 const Icon = ({
   iconName = 'search',
-  size = 'md',
+  size = 24,
   color = 'black',
   pointer = false,
 }: IconProps): ReactElement => {
