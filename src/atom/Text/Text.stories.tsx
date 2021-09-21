@@ -8,7 +8,7 @@ export default {
 } as Meta;
 
 const Template: Story = (props) => <Text {...props} />;
-const testContent = `"But man is not made for defeat,” he said. “A man can be destroyed but not defeated."`
+const testContent = `"But man is not made for defeat,” he said. “A man can be destroyed but not defeated."`;
 
 export const text = Template.bind({});
 

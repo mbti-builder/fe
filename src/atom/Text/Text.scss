@@ -1,72 +1,72 @@
 ._TEXT_ {
-    font-weight: $font_weight_regular;
-    font-size: $font_size_medium;
-    &.font-size {
-        &-xxs {
-            font-size: $font_size_xx_small;
-        }
-        &-xs {
-            font-size: $font_size_x_small;
-        }
-        &-s {
-            font-size: $font_size_small;
-        }
-        &-md {
-            font-size: $font_size_medium;
-        }
-        &-l {
-            font-size: $font_size_large;
-        }
-        &-xl {
-            font-size: $font_size_x_large;
-        }
-        &-xxl {
-            font-size: $font_size_xx_large;
-        }
-        &-xxxl {
-            font-size: $font_size_xxx_large;
-        }
-        &-xxxxl {
-            font-size: $font_size_xxxx_large;
-        }
+  font-weight: $font_weight_regular;
+  font-size: $font_size_medium;
+  &.font-size {
+    &-xxs {
+      font-size: $font_size_xx_small;
     }
-    &.font-weight {
-        &-light {
-            font-weight: $font_weight_light;
-        }
-        &-regular {
-            font-weight: $font_weight_regular;
-        }
-        &-medium {
-            font-weight: $font_weight_medium;
-        }
-        &-bold {
-            font-weight: $font_weight_bold;
-        }
+    &-xs {
+      font-size: $font_size_x_small;
     }
-    &.text-align {
-        &-start {
-          display: block;
-          text-align: start;
-        }
-        &-center {
-          display: block;
-          text-align: center;
-        }
-        &-end {
-          display: block;
-          text-align: end;
-        }
+    &-s {
+      font-size: $font_size_small;
     }
-    &.line-height {
-        &-narrow {
-            line-height: 0.8;
-        }
-        &-normal {
-            line-height: normal;
-        }
-        &-wide {
-            line-height: 1.6;
-        }
+    &-md {
+      font-size: $font_size_medium;
     }
+    &-l {
+      font-size: $font_size_large;
+    }
+    &-xl {
+      font-size: $font_size_x_large;
+    }
+    &-xxl {
+      font-size: $font_size_xx_large;
+    }
+    &-xxxl {
+      font-size: $font_size_xxx_large;
+    }
+    &-xxxxl {
+      font-size: $font_size_xxxx_large;
+    }
+  }
+  &.font-weight {
+    &-light {
+      font-weight: $font_weight_light;
+    }
+    &-regular {
+      font-weight: $font_weight_regular;
+    }
+    &-medium {
+      font-weight: $font_weight_medium;
+    }
+    &-bold {
+      font-weight: $font_weight_bold;
+    }
+  }
+  &.text-align {
+    &-start {
+      display: block;
+      text-align: start;
+    }
+    &-center {
+      display: block;
+      text-align: center;
+    }
+    &-end {
+      display: block;
+      text-align: end;
+    }
+  }
+  &.line-height {
+    &-narrow {
+      line-height: 0.8;
+    }
+    &-normal {
+      line-height: normal;
+    }
+    &-wide {
+      line-height: 1.6;
+    }
+  }
 }
