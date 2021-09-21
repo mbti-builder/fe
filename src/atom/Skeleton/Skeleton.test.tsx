@@ -39,7 +39,7 @@ describe('<Skeleton />', () => {
       it('withChildren이 false일 때 컴포넌트에 반영되지 않는다', () => {
         const { container } = renderInput({
           withChildren: false,
-          children: 'test',
+          children: testQuote,
         });
         expect(getByTestId(container, 'skeleton')).toEqual(
           expect.not.stringContaining(testQuote),
