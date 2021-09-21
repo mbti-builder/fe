@@ -5,7 +5,7 @@ import { customTypes } from 'custom-types';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: customTypes.ElementSize;
-  variant?: customTypes.ElementVariant;
+  variant?: 'ghost' | 'solid' | 'quiet' | 'minimal';
   buttonColor?: customTypes.ElementColor;
   fullWidth?: boolean;
   rounded?: boolean;
