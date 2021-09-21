@@ -34,7 +34,7 @@ const Button = ({
       className={cn(`_BUTTON_`, className, size, variant, buttonColor, {
         rounded,
         disabled,
-        fullWidth,
+        'full-width': fullWidth,
       })}
       disabled={disabled}
       {...restProps}
