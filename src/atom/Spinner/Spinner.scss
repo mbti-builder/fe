@@ -1,0 +1,63 @@
+// Mixin
+// * $WH: width, height value (e.g. 16px)
+// * $Bsize: border-size value (e.g. 3px)
+// * $Bc0: border-color value (e.g. #fff)
+// * $Bc1: border-background-color value (e.g. #ffffff33)
+@mixin CustomSpin(
+  $WH: 16px,
+  $Bsize: 3px,
+  $Bc0: #fff,
+  $Bc1: rgba(255, 255, 255, 0.2)
+) {
+  width: $WH;
+  height: $WH;
+  border: $Bsize solid $Bc0;
+  margin: 0;
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  border-color: $Bc0 $Bc1 $Bc1 $Bc1;
+  animation: spin 1.15s cubic-bezier(0.31, 0.63, 0.8, 0.73) infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+._SPINNER_ {
+  @include CustomSpin($Bc0: $gray_7, $Bc1: $gray_2);
+
+  // Size
+  &.xxs {
+    @include CustomSpin(12px, 2px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.xs {
+    @include CustomSpin(14px, 2px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.sm {
+    @include CustomSpin(16px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.md {
+    @include CustomSpin(18px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.lg {
+    @include CustomSpin(24px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.xl {
+    @include CustomSpin(28px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+
+  &.xxl {
+    @include CustomSpin(32px, 4px, $Bc0: $gray_7, $Bc1: $gray_2);
+  }
+}
