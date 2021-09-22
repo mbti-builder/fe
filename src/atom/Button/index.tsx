@@ -12,6 +12,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonColor?: ButtonColor;
   fullWidth?: boolean;
   rounded?: boolean;
+  shadow?: boolean;
   labelText?: string;
 }
 
@@ -23,6 +24,7 @@ const Button = ({
   disabled,
   fullWidth,
   rounded,
+  shadow,
   buttonColor = 'black',
   labelText,
   ...restProps
@@ -34,10 +36,10 @@ const Button = ({
       className={cn(`_BUTTON_`, className, size, variant, buttonColor, {
         rounded,
         disabled,
-        fullWidth,
+        'full-width': fullWidth,
+        shadow,
       })}
       disabled={disabled}
-      // eslint-disable-next-line react/jsx-props-no-spreading
       {...restProps}
     >
       <span>{labelText ? <>{labelText} </> : children}</span>

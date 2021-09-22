@@ -4,7 +4,6 @@ import { render, getByTestId } from '@src/test-utils';
 import Icon, { IconProps } from '@src/atom/Icon';
 
 function renderIcon(props: IconProps) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
   return render(<Icon {...props} />);
 }
 
