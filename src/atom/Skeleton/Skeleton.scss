@@ -2,7 +2,7 @@
   display: block;
   background-color: rgba(0, 0, 0, 0.15);
   height: auto;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 
   // variant
   &.circle {
@@ -63,32 +63,32 @@
 
   // size
   &.xxs {
-    width: 32px;
-    height: 24px;
+    width: 3.2rem;
+    height: 2.4rem;
   }
   &.xs {
-    width: 40px;
-    height: 28px;
+    width: 4rem;
+    height: 2.8rem;
   }
   &.sm {
-    width: 60px;
-    height: 32px;
+    width: 6rem;
+    height: 3.2rem;
   }
   &.md {
-    width: 80px;
-    height: 36px;
+    width: 8rem;
+    height: 3.6rem;
   }
   &.lg {
-    width: 100px;
-    height: 44px;
+    width: 10rem;
+    height: 4.4rem;
   }
   &.xl {
-    width: 140px;
-    height: 56px;
+    width: 14rem;
+    height: 5.6rem;
   }
   &.xxl {
-    width: 200px;
-    height: 88px;
+    width: 20rem;
+    height: 8.8rem;
   }
 
   // fitContent
