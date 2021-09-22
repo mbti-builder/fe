@@ -12,7 +12,6 @@ module.exports = {
       statements: 100,
     },
   },
-  coverageReporters: ['json-summary'],
   testEnvironment: 'jsdom',
   moduleNameMapper: {
     '^@src(.*)$': '<rootDir>/src$1',

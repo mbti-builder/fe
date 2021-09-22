@@ -1,19 +1,13 @@
 import React from 'react';
-import { setLoading, useAppDispatch, useUiState } from '@src/store';
-import Button from '@src/atom/Button';
+import { Route, Switch } from 'react-router-dom';
+
+import LandingPage from '@src/pages/LandingPage';
 
 const App = () => {
-  const dispatch = useAppDispatch();
-  const { isLoading } = useUiState();
-
   return (
-    <div>
-      <Button
-        labelText="toggle"
-        onClick={() => dispatch(setLoading({ isLoading: !isLoading }))}
-      />
-      <div>{isLoading ? 'loading' : 'break'}</div>
-    </div>
+    <Switch>
+      <Route exact path="/" component={LandingPage} />
+    </Switch>
   );
 };
 
