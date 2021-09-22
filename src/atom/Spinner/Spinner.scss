@@ -1,11 +1,11 @@
 // Mixin
-// * $WH: width, height value (e.g. 16px)
-// * $Bsize: border-size value (e.g. 3px)
+// * $WH: width, height value (e.g. 1.6rem)
+// * $Bsize: border-size value (e.g. 0.3rem)
 // * $Bc0: border-color value (e.g. #fff)
 // * $Bc1: border-background-color value (e.g. #ffffff33)
 @mixin CustomSpin(
-  $WH: 16px,
-  $Bsize: 3px,
+  $WH: 1.6rem,
+  $Bsize: 0.3rem,
   $Bc0: #fff,
   $Bc1: rgba(255, 255, 255, 0.2)
 ) {
@@ -34,30 +34,30 @@
 
   // Size
   &.xxs {
-    @include CustomSpin(12px, 2px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(1.2rem, 0.2rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.xs {
-    @include CustomSpin(14px, 2px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(1.4rem, 0.2rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.sm {
-    @include CustomSpin(16px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(1.6rem, 0.3rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.md {
-    @include CustomSpin(18px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(1.8rem, 0.3rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.lg {
-    @include CustomSpin(24px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(2.4rem, 0.3rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.xl {
-    @include CustomSpin(28px, 3px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(2.8rem, 0.3rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 
   &.xxl {
-    @include CustomSpin(32px, 4px, $Bc0: $gray_7, $Bc1: $gray_2);
+    @include CustomSpin(3.2rem, 0.4rem, $Bc0: $gray_7, $Bc1: $gray_2);
   }
 }
