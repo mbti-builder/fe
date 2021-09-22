@@ -1,6 +1,8 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router';
+
 import store from '@src/store';
 
 export const parameters = {
@@ -15,6 +17,8 @@ export const parameters = {
 
 addDecorator((Story) => (
   <Provider store={store}>
-    <Story />
+    <MemoryRouter initialEntries={['/']}>
+      <Story />
+    </MemoryRouter>
   </Provider>
 ));
