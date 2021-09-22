@@ -1,15 +1,12 @@
 import React, { ButtonHTMLAttributes, ReactElement } from 'react';
 import cn from 'classnames';
 import './Button.scss';
-
-type ButtonSize = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-type ButtonVariant = 'ghost' | 'solid' | 'quiet' | 'minimal';
-type ButtonColor = 'black' | 'gray' | 'blue' | 'red';
+import { customTypes } from 'custom-types';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: ButtonSize;
-  variant?: ButtonVariant;
-  buttonColor?: ButtonColor;
+  size?: customTypes.ElementSize;
+  variant?: 'ghost' | 'solid' | 'quiet' | 'minimal';
+  buttonColor?: customTypes.ElementColor;
   fullWidth?: boolean;
   rounded?: boolean;
   shadow?: boolean;
