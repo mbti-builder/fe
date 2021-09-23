@@ -1,5 +1,4 @@
 import React, { HTMLAttributes } from 'react';
-// import '@src/atom/Text/Text.scss';
 import './Text.scss';
 import cn from 'classnames';
 
