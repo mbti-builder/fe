@@ -28,6 +28,10 @@ describe('<Skeleton />', () => {
       const { container } = renderInput({ size: 'md' });
       expect(getByTestId(container, 'skeleton')).toHaveClass('md');
     });
+    it('maxWidth props를 넘기면 컴포넌트에 반영된다', () => {
+      const { container } = renderInput({ maxWidth: true });
+      expect(getByTestId(container, 'skeleton')).toHaveClass('max-width');
+    });
     context('children props를 넘기면', () => {
       it('withChildren이 true일 때 컴포넌트에 반영된다', () => {
         const { container } = renderInput({
