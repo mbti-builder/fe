@@ -1,17 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import './Text.scss';
 import cn from 'classnames';
+import { customTypes } from 'custom-types';
 
-type FontSize =
-  | 'xxs'
-  | 'xs'
-  | 'sm'
-  | 'md'
-  | 'lg'
-  | 'xl'
-  | 'xxl'
-  | 'xxxl'
-  | 'xxxxl';
 type FontWeight = 'light' | 'regular' | 'medium' | 'bold';
 type TextAlign = 'start' | 'center' | 'end';
 type LineHeight = 'narrow' | 'normal' | 'wide';
@@ -21,7 +12,7 @@ export interface TextProps
     HTMLDivElement | HTMLSpanElement | HTMLHeadingElement
   > {
   className?: string;
-  fontSize?: FontSize;
+  fontSize?: customTypes.ElementSize;
   fontWeight?: FontWeight;
   textAlign?: TextAlign;
   lineHeight?: LineHeight;
