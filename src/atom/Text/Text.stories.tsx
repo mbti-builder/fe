@@ -5,6 +5,12 @@ import Text, { TextProps } from '@src/atom/Text';
 export default {
   title: 'Text',
   component: Text,
+  argTypes: {
+    fontSize: {
+      options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+      control: { type: 'radio' },
+    },
+  },
 } as Meta;
 
 const Template: Story<TextProps> = (props) => <Text {...props} />;
