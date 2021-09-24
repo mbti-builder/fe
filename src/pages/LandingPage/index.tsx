@@ -1,6 +1,7 @@
 import React from 'react';
 import { setLoading, useAppDispatch, useUiState } from '@src/store';
 import Button from '@src/atom/Button';
+import ToastView from '@src/atom/ToastView';
 
 const LandingPage = () => {
   const dispatch = useAppDispatch();
@@ -13,6 +14,7 @@ const LandingPage = () => {
         onClick={() => dispatch(setLoading({ isLoading: !isLoading }))}
       />
       <div>{isLoading ? 'loading' : 'break'}</div>
+      <ToastView message="message" />
     </div>
   );
 };
