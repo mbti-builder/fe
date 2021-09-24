@@ -3,7 +3,7 @@ import { render, getByTestId } from '@src/test-utils';
 
 import Button, { ButtonProps } from '@src/atom/Button';
 
-function renderButton(props: ButtonProps) {
+const renderButton = (props: ButtonProps) => {
   return render(<Button {...props} />);
 }
 

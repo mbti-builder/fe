@@ -3,7 +3,7 @@ import { render, getByTestId } from '@src/test-utils';
 
 import Input, { InputProps } from '@src/atom/Input';
 
-function renderInput(props: InputProps) {
+const renderInput = (props: InputProps) => {
   return render(<Input {...props} />);
 }
 

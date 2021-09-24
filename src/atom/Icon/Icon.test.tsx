@@ -3,9 +3,9 @@ import { render, getByTestId } from '@src/test-utils';
 
 import Icon, { IconProps } from '@src/atom/Icon';
 
-function renderIcon(props: IconProps) {
+const renderIcon = (props: IconProps) => {
   return render(<Icon {...props} />);
-}
+};
 
 describe('<Icon />', () => {
   it('컴포넌트는 정상적으로 렌더링되어야 한다.', () => {

@@ -2,9 +2,9 @@ import React from 'react';
 import { render, getByTestId } from '@src/test-utils';
 import Spinner, { SpinnerProps } from '@src/atom/Spinner';
 
-function renderSpinner(props: SpinnerProps) {
+const renderSpinner = (props: SpinnerProps) => {
   return render(<Spinner {...props} />);
-}
+};
 
 describe('<Spinner />', () => {
   it('컴포넌트는 정상적으로 렌더링되어야 한다.', () => {
