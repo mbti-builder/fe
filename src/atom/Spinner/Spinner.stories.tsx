@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import Spinner from '@src/atom/Spinner';
+import Spinner, { SpinnerProps } from '@src/atom/Spinner';
 
 export default {
   title: 'Spinner',
@@ -13,7 +13,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (props) => <Spinner {...props} />;
+const Template: Story<SpinnerProps> = (props) => <Spinner {...props} />;
 
 export const spinner = Template.bind({});
 

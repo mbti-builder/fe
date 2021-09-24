@@ -7,7 +7,7 @@ export default {
   component: Icon,
 };
 
-const Template: Story = (props: IconProps) => (
+const Template: Story<IconProps> = (props: IconProps) => (
   <>
     {/*  eslint-disable-next-line react/jsx-props-no-spreading */}
     <Icon {...props} />
