@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import Skeleton from '@src/atom/Skeleton';
+import Skeleton, { SkeletonProps } from '@src/atom/Skeleton';
 
 export default {
   title: 'Skeleton',
@@ -13,7 +13,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (props) => <Skeleton {...props} />;
+const Template: Story<SkeletonProps> = (props) => <Skeleton {...props} />;
 
 export const skeleton = Template.bind({});
 

@@ -4,7 +4,7 @@ import Skeleton, { SkeletonProps } from '@src/atom/Skeleton';
 
 const testQuote = `"I find the harder I work, the more luck I have" - Thomas Jefferson`;
 
-function renderInput(props: SkeletonProps) {
+const renderInput = (props: SkeletonProps) => {
   return render(<Skeleton {...props} />);
 }
 

@@ -18,14 +18,14 @@ export interface TextProps
   lineHeight?: LineHeight;
 }
 
-export default function Text({
+const Text = ({
   children,
   className,
   fontSize = 'md',
   fontWeight = 'regular',
-  textAlign,
-  lineHeight,
-}: TextProps) {
+  textAlign = 'start',
+  lineHeight = 'normal',
+}: TextProps) => {
   return (
     <span
       className={cn(
@@ -40,4 +40,6 @@ export default function Text({
       {children}
     </span>
   );
-}
+};
+
+export default Text;
