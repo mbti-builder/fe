@@ -95,6 +95,10 @@
   &.fitContent {
     max-width: fit-content;
   }
+  
+  &.max-width {
+    width: 100%;
+  }
 
   // withChildren
   &.withChildren {

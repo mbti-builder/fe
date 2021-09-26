@@ -22,5 +22,6 @@ skeleton.args = {
   animation: 'wave',
   size: 'xl',
   fitContent: false,
+  maxWidth: false,
   withChildren: false,
 };

@@ -10,6 +10,7 @@ export interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {
   width?: number | string;
   height?: number | string;
   fitContent?: boolean;
+  maxWidth?: boolean;
   withChildren?: boolean;
 }
 
@@ -18,6 +19,7 @@ const Skeleton = ({
   animation = 'wave',
   size = 'md',
   fitContent,
+  maxWidth,
   withChildren,
   width,
   height,
@@ -29,6 +31,7 @@ const Skeleton = ({
       className={cn('_SKELETON_', variant, animation, size, {
         fitContent,
         withChildren,
+        'max-width': maxWidth,
       })}
       style={{
         width,
