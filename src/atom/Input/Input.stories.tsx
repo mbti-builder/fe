@@ -13,7 +13,7 @@ export const input = Template.bind({});
 
 input.args = {
   inputSize: 'md',
-  password: '패스워드',
+  password: false,
   disabled: false,
   error: false,
   errorMessage: '',
